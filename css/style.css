@@ -1,5 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+:root {
+    font-family: 'Inter';
+}
+
 body {
     background-color: rgb(110, 3, 83);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .poke-cards {}
+
+.poke-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/poke-bgc.jpg');
+    background-size: cover;
+    border-radius: 4px;
+    border: 1rem solid #e5c139;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.poke-card__name {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.poke-card__type {
+    text-transform: capitalize;
+}
+
+img {
+    width: 10rem;
+    height: auto;
+}
